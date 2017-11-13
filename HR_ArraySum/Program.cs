@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace HR_ArraySum
 {
@@ -10,6 +6,21 @@ namespace HR_ArraySum
     {
         static void Main(string[] args)
         {
+            int sizeOfArray = int.Parse(Console.ReadLine());
+            string[] numbersArray = new string[sizeOfArray];
+
+            string[] elementsOfArray = Console.ReadLine().Split(' ');
+            int result = 0;
+            for (int i = 0; i < numbersArray.Length; i++)
+            {
+                numbersArray[i] = elementsOfArray[i];
+                result += int.Parse(numbersArray[i]);
+            }
+            Console.WriteLine(result);
+            Console.ReadLine();
         }
+  
+   
+
     }
 }
